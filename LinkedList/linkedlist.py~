@@ -1,0 +1,22 @@
+
+
+
+class LinkedList():
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+    def __str__(self):
+        strvalues = [str(self.value)]
+        nextnode = self.next
+        while nextnode:
+            values.append(str(nextnode.value))
+            nextnode = nextnode.next
+        ' -> '.join(strvalues)
+
+    def append_to_tail(self, value):
+        to_append = Node(value)
+        current_node = self
+        while current_node.next:
+            current_node = current_node.next
+        current_node.next = to_append
